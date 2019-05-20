@@ -1,0 +1,106 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.block{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to top left, purple, crimson, orangered, gold);
+    margin-bottom: 10px;
+    position: relative;
+    color: white;
+    border-radius: 20px;
+}
+.deleteImg{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.wrapperAddUser{
+    width: 400px;
+    background-color: purple;
+    margin-bottom: 50px;
+    padding: 20px;
+    color: white;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: inherit;
+    color: white;
+    margin-left: 5px;
+}
+input{
+    margin-top: 30px;
+}
+#createUserBtn{
+    margin: 20px 0;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    user-select: none;
+    font-size: 16px;
+}
+#createUserBtn:hover{
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+    width: 102px;
+    background: linear-gradient(135deg, #214cda, #8039d8);
+}
+@keyframes slideInRight{
+    0%{
+        transform: translate(-100%, 0);
+    }
+    75%{
+        transform: translate(0, 0);
+    }
+    85%{
+        transform: translate(0, -10px);
+    }
+    95%{
+        transform: translate(-10px, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+    
+}
+.slide-right{
+    animation: 1s slideInRight ease-in-out;
+}
+
+@keyframes hideRight {
+    0%{
+        transform: scale(1);
+    }
+   
+    100%{
+        transform: scale(0);
+    }
+}
+.hide-right{
+    transform-origin: top left;
+    animation: .5s hideRight ease-out 1;
+}
+
+
+
+
+
+
+/*Only for  <!-- <script src="card.js"></script>
+            <script src="loik.js"></script> -->*/
+.hide{
+    display: none;
+}
